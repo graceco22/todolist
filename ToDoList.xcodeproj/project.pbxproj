@@ -33,6 +33,7 @@
 		E2E22D462C39174D00A56E11 /* NewItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E22D452C39174D00A56E11 /* NewItemViewViewModel.swift */; };
 		E2E22D482C39175E00A56E11 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E22D472C39175E00A56E11 /* RegisterViewViewModel.swift */; };
 		E2E22D4A2C39177200A56E11 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E22D492C39177200A56E11 /* ToDoListItemViewViewModel.swift */; };
+		E2E22D4C2C39D0DB00A56E11 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E22D4B2C39D0DB00A56E11 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		E2E22D452C39174D00A56E11 /* NewItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemViewViewModel.swift; sourceTree = "<group>"; };
 		E2E22D472C39175E00A56E11 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		E2E22D492C39177200A56E11 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
+		E2E22D4B2C39D0DB00A56E11 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				E2E22D332C39162F00A56E11 /* NewItemView.swift */,
 				E2E22D352C39164400A56E11 /* RegisterView.swift */,
 				E2E22D372C39166900A56E11 /* ToDoListItemView.swift */,
+				E2E22D4B2C39D0DB00A56E11 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2E22D342C39162F00A56E11 /* NewItemView.swift in Sources */,
+				E2E22D4C2C39D0DB00A56E11 /* HeaderView.swift in Sources */,
 				E2E22D442C39173F00A56E11 /* LoginViewViewModel.swift in Sources */,
 				E2E22D482C39175E00A56E11 /* RegisterViewViewModel.swift in Sources */,
 				E2E22CF82C37B82B00A56E11 /* MainView.swift in Sources */,
