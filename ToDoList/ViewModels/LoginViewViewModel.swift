@@ -10,14 +10,31 @@ import Foundation
 class LoginViewViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
+    @Published var errorMessage = ""
     
     init() {}
     
     func login() {
+        errorMessage = ""
         
+        guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
+              !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+            errorMessage = "Please fill in all fields!"
+            print(errorMessage)
+            return
+        }
+        
+        guard email.contains("@") && email.contains(".") else {
+            errorMessage = "Please enter a valid email."
+            print(errorMessage)
+            return
+        }
+        
+        // Call authentication service here
+        print("Login successful")
     }
     
-    func validate() {
-        
-    }
+//    func validate() {
+//        
+//    }
 }
