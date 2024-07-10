@@ -20,18 +20,14 @@ class LoginViewViewModel: ObservableObject {
         guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
               !password.trimmingCharacters(in: .whitespaces).isEmpty else {
             errorMessage = "Please fill in all fields!"
-            print(errorMessage)
             return
         }
         
         guard email.contains("@") && email.contains(".") else {
             errorMessage = "Please enter a valid email."
-            print(errorMessage)
             return
         }
         
-        // Call authentication service here
-        print("Login successful")
     }
     
 //    func validate() {
