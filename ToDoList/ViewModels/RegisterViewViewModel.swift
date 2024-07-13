@@ -5,6 +5,7 @@
 //  Created by Grace Co on 2024-07-05.
 //
 
+import FirebaseFirestore
 import FirebaseAuth
 import Foundation
 
@@ -30,7 +31,11 @@ class RegisterViewViewModel: ObservableObject {
     }
     
     private func insertUserRecord(id: String) {
+        let newUser = User(id: id, name: name, email: email, joined: Date().timeIntervalSince1970)
         
+        let db = Firestore.firestore()
+        
+        db.collection("users").documentId().setData(documentData: [String:Any])
     }
     
     private func validate() -> Bool {
