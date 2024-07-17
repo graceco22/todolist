@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ToDoListItemView: View {
-    @StateObject var viewModel = ProfileViewViewModel()
+    @StateObject var viewModel = ToDoListItemViewViewModel()
     let item: ToDoListItem
     
     var body: some View {
@@ -34,5 +34,5 @@ struct ToDoListItemView: View {
 }
 
 #Preview {
-    ToDoListItemView(item: .init(id: "123", title: "Get milk", dueDate: Date().timeIntervalSince1970, createdDate: Date().timeIntervalSince1970, isDone: true))
+    ToDoListItemView(item: .init(id: "a3Oy0OH1BDPfar5K8401dVoYozA2", title: "Get milk", dueDate: Date().timeIntervalSince1970, createdDate: Date().timeIntervalSince1970, isDone: true))
 }
